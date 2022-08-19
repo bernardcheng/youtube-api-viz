@@ -7,10 +7,11 @@
 1. Set-up Youtube project to obtain personal API Key. See [official documentation](https://developers.google.com/youtube/registering_an_application) for details 
 * Note: Take note of daily API call quota limits (see [official limits](https://developers.google.com/youtube/v3/determine_quota_cost) for details). 
 
-2. Activate virtual environment in the directory of choice and install the necessary libraries outlined in requirements.txt . 
+2. Activate virtual environment in the directory of choice and install the necessary libraries outlined in requirements.txt and the required NLP pipeline for spacy dependecy. 
 
    ```python
    pip install -r requirements.txt
+   python -m spacy download en_core_web_lg
    ```
 ## Usage:
 
